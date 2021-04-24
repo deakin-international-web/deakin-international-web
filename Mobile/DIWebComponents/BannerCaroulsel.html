@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Banner</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 25rem;
+      height: 17rem;
+      /* margin-left: -15rem;
+    margin-bottom: -15rem; */
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      background-size: cover;
+      width: 25rem;
+      height: 18rem;
+
+    }
+
+    .slideImg {
+      width: 100vw;
+      height: 110vh;
+    }
+  </style>
+</head>
+
+
+
+
+
+
+
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container" style="width: 100vw; height: 100vh;">
+    <div class="swiper-wrapper" style="width: 100vw; height: 100vh;">
+      <div class="swiper-slide" style="width: 100vw; height: 100vh;">
+        <a href="https://www.deakin.edu.au">
+          <img class="slideImg"
+            src="https://www.deakin.edu.au/__data/assets/image/0006/2158440/29244_Deakin-Central-Burwood-February_Finals_Simon-Shiff-13.jpg ">
+        </a>
+      </div>
+      <div class="swiper-slide" style="width: 100vw; height: 100vh;">
+        <a href="https://www.deakin.edu.au">
+          <img class="slideImg"
+            src="https://www.deakin.edu.au/__data/assets/image/0007/2158495/28931_Deakin-Library-Burwood_Simon-Shiff_0-23.jpg">
+        </a>
+      </div>
+      
+      <div class="swiper-slide" style="width: 100vw; height: 100vh;">
+        <a href="https://www.deakin.edu.au">
+          <img class="slideImg"
+            src="https://www.deakin.edu.au/__data/assets/image/0006/2158503/29276_Deakin-Central-Burwood-February_Finals_Simon-Shiff-6.jpg ">
+        </a>
+      </div>
+      <div class="swiper-slide" style="width: 100vw; height: 100vh;">
+        <a href="https://www.deakin.edu.au">
+          <img class="slideImg"
+            src="https://www.deakin.edu.au/__data/assets/image/0008/2273426/29374-campus-tours.jpg">
+        </a>
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next" id="prevBtn"></div>
+    <div class="swiper-button-prev" id="nextBtn"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      cssMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      },
+      speed: 300,
+      mousewheel: true,
+      keyboard: true,
+      autoplay: {
+        delay: 2500,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+        reverseDirection: false,
+      },
+    });
+  </script>
+</body>
+
+</html>

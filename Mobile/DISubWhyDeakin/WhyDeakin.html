@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <link rel='stylesheet' href="whyDeakin-style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Why Deakin</title>
+</head>
+
+<body>
+    <!-- coverpage section -->
+    <div class="content">
+        <header class="app-header">
+            <section class="coverPage" >
+                <div class="content">
+                    <h2>Why Deakin ?</h2>
+                      <a href="https://www.deakin.edu.au/life-at-deakin/why-study-at-deakin">Choose Deakin</a>
+                  </div>
+            </section>
+        </header>
+        
+        <div class="container">
+            <!-- Intro section -->
+            <div class="intro">
+            <h2>Premium. Proven. Loved. <br />Study at Deakin.</h2>
+            <div class="grid">
+                <div class="item">
+                    <p>#1 university in Australia for educational experience</p>
+                    <img src="https://www.deakin.edu.au/__data/assets/image/0010/1617355/Ribbon.png" alt="">
+                </div>
+                <div class="item">
+                    <p>Top 1% of universities worldwide<sup>#</sup></p>
+                    <img src="https://www.deakin.edu.au/__data/assets/image/0010/1617346/Globe.png" alt="">
+                </div>
+                <div class="item">
+                    <p>#1 university careers service in Australia<sup>^</sup></p>
+                    <img src="https://www.deakin.edu.au/__data/assets/image/0005/1617332/Australia.png" alt="">
+                </div>
+                <div class="item">
+                    <p>#1 university in Victoria for student satisfaction<sup>^</sup></p>
+                    <img src="https://www.deakin.edu.au/__data/assets/image/0003/1617348/Graphs.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- brighten-furture section -->
+            <div class="subheader">
+                <div>
+                    <p>Brighten your future</p>
+                </div>
+            </div>
+            <div class="grid" style="grid-template-columns: repeat(1, 1fr);">
+                <div class="item">
+                    <a href="https://www.deakin.edu.au/life-at-deakin/why-study-at-deakin/workplace-learning">
+                        <h4>Workplace learning to get ahead</h4>
+                    </a>
+                    <p>Get real-world work experience when you study at Deakin. Our industry contacts means you can get
+                        started with a workplace internship, paid placement or work-integrated learning program.</p>
+                    <img class="circle-image"
+                        src="https://www.deakin.edu.au/__data/assets/image/0009/1921545/workplace_learning_23968_550x550.jpg"
+                        alt="">
+                        
+                </div>
+
+                <div class="item">
+                    <a href="https://www.deakin.edu.au/life-at-deakin/why-study-at-deakin/study-support">
+                        <h4>Supporting your study</h4>
+                    </a>
+                    <p>Our student mentors and learning advisers can support you with everything from effective note
+                        taking and structuring assignments to preparing for exams and oral presentations</p>
+                    <img class="circle-image"
+                        src="https://www.deakin.edu.au/__data/assets/image/0003/1921539/student_support_24303_550x550.jpg"
+                        alt="">
+                </div>
+
+                <div class="item">
+                    <a href="https://www.deakin.edu.au/life-at-deakin/why-study-at-deakin/supporting-your-career">
+                        <h4>Building your career</h4>
+                    </a>
+                    <p>We offer career support both during your studies and after you graduate. Take advantage of career
+                        counselling and workshops, internships and more to help you move from course to career sooner.
+                    </p>
+                    <img class="circle-image"
+                        src="https://www.deakin.edu.au/__data/assets/image/0004/2019280/career_26650_400x280.jpg"
+                        alt="">
+                </div>
+
+            </div>
+            <!-- deakin value section -->
+            <div class="DValue">
+                <h2 id="DeakinValue">Deakin Value:
+                    <span style="display: initial;">Excellent</span>
+                    <span>Inclusive</span>
+                    <span>Brave</span>
+                    <span>Dynamic</span>
+                    <span>Sustainable</span>
+                    <span>Ethical</span>
+                </h2>
+                <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="item">
+                        <h4>
+                            Excellent 
+                        </h4>
+                        <p>We strive for excellence in all aspects of our work. </p>
+                    </div>
+                    <div class="item">
+                        <h4>
+                            Inclusive 
+                        </h4>
+                        <p>We value diversity, embrace difference, seek to engage and welcome all. </p>
+                    </div>
+                    <div class="item">
+                        <h4>
+                            Brave 
+                        </h4>
+                        <p>We demonstrate courage and ambition, support personal responsibility and accountability. </p>
+                    </div>
+                    <div class="item">
+                        <h4>
+                            Dynamic
+                        </h4>
+                        <p>We are innovative and entrepreneurial, solving problems with creativity and flexibility. </p>
+                    </div>
+                    <div class="item">
+                        <h4>
+                            Sustainable
+                        </h4>
+                        <p>We care about our shared future, integrating economic, environmental and social dimensions of sustainability. </p>
+                    </div>
+                    <div class="item">
+                        <h4>
+                            Ethical 
+                        </h4>
+                        <p>We conduct our business with the highest standards of professional behaviour and integrity. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Deakin value rotator effect
+        let text = document.getElementById('DeakinValue');
+        let words = text.getElementsByTagName('span');
+        let i = 0;
+        function rotator() {
+            words[i].style = 'none';
+            i = (i + 1) % words.length;
+            words[i].style.display = 'initial'
+        }
+        setInterval(rotator, 1600)
+
+    </script>
+</body>
+
+</html>
